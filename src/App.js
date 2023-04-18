@@ -9,10 +9,10 @@ function App() {
       <div>
       <Header />
       <div className="w-full flex">
-        <div className=" w-1/3 md:w-48 p-2 m-2">
+        <div className=" w-1/3 md:w-48 p-2 m-2  h-[650px] overflow-auto scrollbar">
           <Sidebar/>
         </div>
-        <div className="p-2 m-2 w-3/4">
+        <div className="p-2 m-2 w-2/3  h-[650px]  overflow-auto scrollbar">
           <Outlet/>
         </div>
       </div>
