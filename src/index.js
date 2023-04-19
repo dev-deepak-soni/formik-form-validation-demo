@@ -8,6 +8,9 @@ import Error from './error/Error';
 import Content from './component/Content';
 import Loginform from './component/Loginform';
 import Signup from './component/Signup';
+import SignupYup from './component/SignupYup';
+import Formikcomponent from './component/Formikcomponent';
+import Formikcomponentwitherrortag from './error/Formikcomponentwitherrortag';
 
 
 const router = createBrowserRouter([
@@ -28,6 +31,21 @@ const router = createBrowserRouter([
       {
       path : 'signup',
       element : <Signup/>,
+      errorElement : <Error/>
+      },
+      {
+      path : 'signupyup',
+      element : <SignupYup/>,
+      errorElement : <Error/>
+      },
+      {
+      path : 'formik',
+      element : <Formikcomponent/>,
+      errorElement : <Error/>
+      },
+      {
+      path : 'formikwitherrortag',
+      element : <Formikcomponentwitherrortag/>,
       errorElement : <Error/>
       }
     ]
