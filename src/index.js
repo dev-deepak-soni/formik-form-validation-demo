@@ -10,7 +10,8 @@ import Loginform from './component/Loginform';
 import Signup from './component/Signup';
 import SignupYup from './component/SignupYup';
 import Formikcomponent from './component/Formikcomponent';
-import Formikcomponentwitherrortag from './error/Formikcomponentwitherrortag';
+import Formikcomponentwitherrortag from './component/Formikcomponentwitherrortag';
+import  FriendList  from './component/FriendList';
 
 
 const router = createBrowserRouter([
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
       {
       path : 'formikwitherrortag',
       element : <Formikcomponentwitherrortag/>,
+      errorElement : <Error/>
+      },
+      {
+      path : 'fieldarray',
+      element : <FriendList/>,
       errorElement : <Error/>
       }
     ]

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -11,8 +10,7 @@ const Sidebar = () => {
         <Link to="/signupyup"><li className='cursor-pointer p-2 m-2 hover:bg-gray-200 hover:text-black shadow rounded-xl'>Signup-Yup</li></Link>
         <Link to="/formik"><li className='cursor-pointer p-2 m-2 hover:bg-gray-200 hover:text-black shadow rounded-xl'>Formik Component</li></Link>
         <Link to="/formikwitherrortag"><li className='cursor-pointer p-2 m-2 hover:bg-gray-200 hover:text-black shadow rounded-xl'>Formik with Error Tag</li></Link>
-        <li className='cursor-pointer p-2 m-2 hover:bg-gray-200 hover:text-black shadow rounded-xl'>App Store</li>
-      </ul>
+        </ul>
     </div>
   )
 }
